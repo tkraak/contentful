@@ -1,0 +1,10 @@
+extends(src='layout.sgr')
+  block(name='content')
+    h2 Hello Contentful!
+  
+    // no idea how to do loops with reshape-expressions yet
+    ul
+      for post in contentful.posts
+        li= JSON.stringify(post)
+        
+    p Title of a blog post: {{ contentful.posts[0].title }}

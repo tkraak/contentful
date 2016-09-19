@@ -1,0 +1,35 @@
+{
+  "name": "contentful",
+  "description": "Experimenting with spike-contentful.",
+  "version": "0.0.1",
+  "author": "tkraak",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/tkraak/contentful/issues",
+  "dependencies": {
+    "babel-preset-latest": "^6.14.0",
+    "hard-source-webpack-plugin": "0.0.38",
+    "reshape-standard": "^0.3.0",
+    "spike-contentful": "^0.3.1",
+    "spike-css-standards": "^0.1.1",
+    "spike-page-id": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^4.0.1",
+    "spike-core": "^0.11.2",
+    "standard": "^8.0.0"
+  },
+  "homepage": "https://github.com/tkraak/contentful",
+  "main": "app.js",
+  "private": "true",
+  "repository": "https://github.com/tkraak/contentful",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}
